@@ -1,4 +1,3 @@
-
 const STORAGE_KEY = "g7_syllabus_tracker";
 
 let courses = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
@@ -254,7 +253,7 @@ function renderDashboard() {
 
     let html = `
         <header class="app-header">
-            <h1>📚 Syllabus Tracker</h1>
+            <h1>SyllabusTracker</h1>
             <p>Organize your learning. Track your progress.</p>
         </header>
 
