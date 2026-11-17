@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Course Syllabus Tracking System</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Course Syllabus Tracking System</h1>
+        <h2>Topic Completion Checklist</h2>
+        <p>Manage your subjects and track your study progress.</p>
+    </header>
+
+    <main>
+
+        <!-- Subject Creation -->
+
+        <section>
+            <h2>Create Your Subject</h2>
+
+            <form id="subjectForm">
+
+                <label for="subject">Subject Name:</label>
+                <input type="text" id="subject" required
+                    placeholder="Enter subject name">
+
+                <br><br>
+
+                <label for="semester">Semester:</label>
+                <input type="text" id="semester"
+                    placeholder="Enter semester">
+
+                <br><br>
+
+                <label for="teacher">Teacher Name:</label>
+                <input type="text" id="teacher"
+                    placeholder="Enter teacher name">
+
+                <br><br>
+
+                <button type="submit">Save Subject</button>
+
+                <p id="subjectMessage"></p>
+
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Overall Progress -->
+
+        <section>
+            <h2>Overall Subject Progress</h2>
+
+            <p>Completion Progress:
+                <strong id="progressText">0%</strong>
+            </p>
+
+            <progress id="progressBar" value="0" max="100">
+                0%
+            </progress>
+
+            <p id="topicCount">
+                0 of 15 topics completed
+            </p>
+
+        </section>
+
+        <hr>
+
+        <!-- Unit 1 -->
+
+        <section>
+            <h2>Unit 1</h2>
+
+            <fieldset>
+                <legend>Topic Completion Checklist</legend>
+
+                <input type="checkbox" class="topic-checkbox" id="u1t1">
+                <label for="u1t1">Topic 1</label>
+
+                <select>
+                    <option>Easy</option>
+                    <option>Moderate</option>
+                    <option>Tough - Needs Revision</option>
+                </select>
+
+                <br><br>
+
+                <input type="checkbox" class="topic-checkbox" id="u1t2">
+                <label for="u1t2">Topic 2</label>
+
+                <select>
+                    <option>Easy</option>
+                    <option>Moderate</option>
+                    <option>Tough - Needs Revision</option>
+                </select>
+
+                <br><br>
+
+                <input type="checkbox" class="topic-checkbox" id="u1t3">
+                <label for="u1t3">Topic 3</label>
+
+                <select>
+                    <option>Easy</option>
+                    <option>Moderate</option>
+                    <option>Tough - Needs Revision</option>
+                </select>
+
+                <br><br>
+
+                <label for="notes1">Quick Notes:</label>
+                <br>
+
+                <textarea id="notes1" class="quick-notes"
+                    rows="3" cols="40"
+                    placeholder="Write your notes here"></textarea>
+
+            </fieldset>
+        </section>
+
+        <hr>
+
+        <!-- Unit 2 -->
+
+        <section>
+            <h2>Unit 2</h2>
+
+            <fieldset>
+                <legend>Topic Completion Checklist</legend>
+
+                <input type="checkbox" class="topic-checkbox" id="u2t1">
+                <label for="u2t1">Topic 1</label>
+
+                <select>
+                    <option>Easy</option>
+                    <option>Moderate</option>
+                    <option>Tough - Needs Revision</option>
+                </select>
+
+                <br><br>
+
+                <input type="checkbox" class="topic-checkbox" id="u2t2">
+                <label for="u2t2">Topic 2</label>
+
+                <select>
+                    <option>Easy</option>
+                    <option>Moderate</option>
+                    <option>Tough - Needs Revision</option>
+                </select>
+
+                <br><br>
+
+                <input type="checkbox" class="topic-checkbox" id="u2t3">
+                <label for="u2t3">Topic 3</label>
+
+                <select>
+                    <option>Easy</option>
+                    <option>Moderate</option>
+                    <option>Tough - Needs Revision</option>
+                </select>
+
+                <br><br>
+
+                <label for="notes2">Quick Notes:</label>
+                <br>
+
+                <textarea id="notes2" class="quick-notes"
+                    rows="3" cols="40"></textarea>
+
+            </fieldset>
+        </section>
+
+        <hr>
+
+        <!-- Unit 3 -->
+
+        <section>
+            <h2>Unit 3</h2>
+
+            <fieldset>
+                <legend>Topic Completion Checklist</legend>
+
+                <input type="checkbox" class="topic-checkbox" id="u3t1">
+                <label for="u3t1">Topic 1</label>
+
+                <select>
+                    <option>Easy</option>
+                    <option>Moderate</option>
+                    <option>Tough - Needs Revision</option>
+                </select>
+
+                <br><br>
+
+                <input type="checkbox" class="topic-checkbox" id="u3t2">
+                <label for="u3t2">Topic 2</label>
+
+                <select>
+                    <option>Easy</option>
+                    <option>Moderate</option>
+                    <option>Tough - Needs Revision</option>
+                </select>
+
+                <br><br>
+
+                <input type="checkbox" class="topic-checkbox" id="u3t3">
+                <label for="u3t3">Topic 3</label>
+
+                <select>
+                    <option>Easy</option>
+                    <option>Moderate</option>
+                    <option>Tough - Needs Revision</option>
+                </select>
+
+                <br><br>
+
+                <label for="notes3">Quick Notes:</label>
+                <br>
+
+                <textarea id="notes3" class="quick-notes"
+                    rows="3" cols="40"></textarea>
+
+            </fieldset>
+        </section>
+
+        <hr>
+
+        <!-- Unit 4 -->
+
+        <section>
+            <h2>Unit 4</h2>
+
+            <fieldset>
+                <legend>Topic Completion Checklist</legend>
+
+                <input type="checkbox" class="topic-checkbox" id="u4t1">
+                <label for="u4t1">Topic 1</label>
+
+                <select>
+                    <option>Easy</option>
+                    <option>Moderate</option>
+                    <option>Tough - Needs Revision</option>
+                </select>
+
+                <br><br>
+
+                <input type="checkbox" class="topic-checkbox" id="u4t2">
+                <label for="u4t2">Topic 2</label>
+
+                <select>
+                    <option>Easy</option>
+                    <option>Moderate</option>
+                    <option>Tough - Needs Revision</option>
+                </select>
+
+                <br><br>
+
+                <input type="checkbox" class="topic-checkbox" id="u4t3">
+                <label for="u4t3">Topic 3</label>
+
+                <select>
+                    <option>Easy</option>
+                    <option>Moderate</option>
+                    <option>Tough - Needs Revision</option>
+                </select>
+
+                <br><br>
+
+                <label for="notes4">Quick Notes:</label>
+                <br>
+
+                <textarea id="notes4" class="quick-notes"
+                    rows="3" cols="40"></textarea>
+
+            </fieldset>
+        </section>
+
+        <hr>
+
+        <!-- Unit 5 -->
+
+        <section>
+            <h2>Unit 5</h2>
+
+            <fieldset>
+                <legend>Topic Completion Checklist</legend>
+
+                <input type="checkbox" class="topic-checkbox" id="u5t1">
+                <label for="u5t1">Topic 1</label>
+
+                <select>
+                    <option>Easy</option>
+                    <option>Moderate</option>
+                    <option>Tough - Needs Revision</option>
+                </select>
+
+                <br><br>
+
+                <input type="checkbox" class="topic-checkbox" id="u5t2">
+                <label for="u5t2">Topic 2</label>
+
+                <select>
+                    <option>Easy</option>
+                    <option>Moderate</option>
+                    <option>Tough - Needs Revision</option>
+                </select>
+
+                <br><br>
+
+                <input type="checkbox" class="topic-checkbox" id="u5t3">
+                <label for="u5t3">Topic 3</label>
+
+                <select>
+                    <option>Easy</option>
+                    <option>Moderate</option>
+                    <option>Tough - Needs Revision</option>
+                </select>
+
+                <br><br>
+
+                <label for="notes5">Quick Notes:</label>
+                <br>
+
+                <textarea id="notes5" class="quick-notes"
+                    rows="3" cols="40"></textarea>
+
+            </fieldset>
+        </section>
+
+        <hr>
+
+        <!-- Study Summary -->
+
+        <section>
+            <h2>My Study Summary</h2>
+
+            <ul>
+                <li>Review completed topics.</li>
+                <li>Revise difficult topics.</li>
+                <li>Complete pending syllabus.</li>
+                <li>Prepare for examinations.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>Course Syllabus Tracking System</p>
+        <p>Designed for students to manage their study progress.</p>
+        <p>Thank You!</p>
+    </footer>
+
+</body>
+</html>
